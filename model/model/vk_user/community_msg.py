@@ -1,4 +1,5 @@
-@@ -3,6 +3,7 @@
+from random import randint
+from model.settings.settings_bot import vk_session
 
 
 def write_msg(user_ids, text, keyboard=None, attachment=None):
