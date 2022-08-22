@@ -1,4 +1,8 @@
-@@ -6,6 +6,7 @@
+@@ -1,11 +1,12 @@
+from vk_api.keyboard import VkKeyboard, VkKeyboardColor
+COLOR_PRIMARY = VkKeyboardColor.PRIMARY
+COLOR_NEGATIVE = VkKeyboardColor.NEGATIVE
+COLOR_POSITIVE = VkKeyboardColor.POSITIVE
 
 
 def button_bot(text: str, text_2=None, text_3=None):
