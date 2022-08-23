@@ -1,4 +1,3 @@
-@@ -1,22 +1,25 @@
 from vk_api.vk_api import VkApi
 from model.settings.config import login, password
 
