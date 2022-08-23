@@ -1,4 +1,4 @@
-@@ -8,6 +8,7 @@ def __init__(self, db):
+    def __init__(self, db):
         self.connections = self.engine.connect()
 
     def create_table(self):
