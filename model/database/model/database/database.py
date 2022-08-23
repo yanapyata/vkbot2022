@@ -1,4 +1,3 @@
-@@ -1,16 +1,19 @@
 import sqlalchemy
 
 
@@ -18,7 +17,7 @@ class DataBase:
         result_dict = dict()
         result_db = self.connection.execute("select * from Users").fetchall()
         for item in result_db:
-@@ -23,13 +26,15 @@ def select_users(self, event):
+    def select_users(self, event):
             self.insert_users(event.user_id)
 
     def select_users_lists(self, table_name):
@@ -34,7 +33,7 @@ class DataBase:
         if user_id is not None:
             result_db = self.connection.execute(f"select * from advancedsearch where id_users={user_id};").fetchall()
             if len(result_db) != 0:
-@@ -40,6 +45,7 @@ def select_advanced_search(self, user_id):
+    def select_advanced_search(self, user_id):
                 return result[-1]
 
     def select_list(self, db_name, table_name, user_id):
@@ -42,7 +41,7 @@ class DataBase:
         result_db = self.connection.execute(
             f"select {table_name} from {db_name} where id_users={user_id} order by id desc limit 10;").fetchall()
         if len(result_db) != 0:
-@@ -49,18 +55,22 @@ def select_list(self, db_name, table_name, user_id):
+    def select_list(self, db_name, table_name, user_id):
             return result
 
     def delete_advanced_search(self, user_id):
