@@ -1,4 +1,3 @@
-@@ -1,9 +1,10 @@
 import re
 PATTERNS_CITY = r'^\*[A-za-zА-я-а-я]+'
 
