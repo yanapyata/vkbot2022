@@ -1,5 +1,5 @@
 # FAQ
-### Перед использование заполни файл settings.config.py
+### Перед использованием заполни файл settings.config.py
 ### Дерево проекта
 ```html
 -Vkbot
@@ -38,7 +38,7 @@
 * user_id = users_db.select_users(event) - id пользователя кто пишет боту
 * users_db.insert_advanced_search - если указаны данные от пользователя, добавляем в базу
 * advanced_search = users_db.select_advanced_search(user_id) - получаем данные из расширенного поиска для пользователя
-* result = vk_session.method("messages.getById", - использовал его потому что работает лучше чем event.text
+* result = vk_session.method("messages.getById", - использовала его потому что работает лучше чем event.text
 * result_text - текст от пользователя "введенный"
 
 2 bots_logic_event_text.py - дополнительная информация для работы бота и функция поиска
